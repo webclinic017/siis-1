@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"q",
+				"qs"
+			],
+			[
+				"__fe",
+				"__fetch_assets"
+			],
+			[
+				"__fet",
+				"__fetch_assets"
+			],
+			[
+				"margi",
+				"margin_balance"
+			],
+			[
+				"asset_",
+				"asset_upnl"
+			],
+			[
+				"mar",
+				"marginBalance"
+			],
+			[
+				"wa",
+				"walletBalance"
+			],
+			[
+				"us",
+				"used_margin"
+			],
+			[
+				"MAR",
+				"MARGIN"
+			],
+			[
+				"Kra",
+				"KrakenTrader"
+			],
+			[
+				"ORDER_TAK",
+				"ORDER_TAKE_PROFIT_LIMIT"
+			],
+			[
+				"ORDER_ST",
+				"ORDER_STOP_LIMIT"
+			],
+			[
+				"order",
+				"order_book_depth"
+			],
+			[
+				"trac",
+				"traceback"
+			],
+			[
 				"tick",
 				"ticker"
 			],
@@ -228,10 +284,6 @@
 				"exit_reason"
 			],
 			[
-				"order",
-				"order_type"
-			],
-			[
 				"wo",
 				"worst-timestamp"
 			],
@@ -268,20 +320,12 @@
 				"market_id"
 			],
 			[
-				"mar",
-				"market_or_instrument"
-			],
-			[
 				"posi",
 				"position_id"
 			],
 			[
 				"market_o",
 				"market_or_instrument"
-			],
-			[
-				"trac",
-				"traceback_logger"
 			],
 			[
 				"error",
@@ -384,10 +428,6 @@
 				"view_service"
 			],
 			[
-				"q",
-				"quantity"
-			],
-			[
 				"pro",
 				"property\tNew Property"
 			],
@@ -474,46 +514,6 @@
 			[
 				"ref",
 				"create_ref_oid"
-			],
-			[
-				"cre",
-				"create_oid"
-			],
-			[
-				"OP",
-				"STATE_OPENED"
-			],
-			[
-				"un",
-				"unlock"
-			],
-			[
-				"Un",
-				"Unable"
-			],
-			[
-				"__on",
-				"__on_tickers_data"
-			],
-			[
-				"oco",
-				"oco_oid"
-			],
-			[
-				"stop_",
-				"stop_ref_oid"
-			],
-			[
-				"entry",
-				"entry_oid"
-			],
-			[
-				"etr",
-				"entry_ref_oid"
-			],
-			[
-				"_u",
-				"_audible"
 			]
 		]
 	},
@@ -559,64 +559,44 @@
 			"file": "/home/frederic/.siis/config/appliances/binance-shit-signal.json",
 			"settings":
 			{
-				"buffer_size": 8428,
+				"buffer_size": 8395,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "trader/connector/kraken/trader.py",
+			"settings":
+			{
+				"buffer_size": 16012,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 309 files for \"Asset\" (case sensitive)\n\n/home/frederic/dev/trading/siis/common/signal.py:\n   45  \n   46  \tSIGNAL_ASSET_DATA = 600             # data is a tuple with (asset_id, asset object)\n   47: \tSIGNAL_ASSET_DATA_BULK = 601        # data is an array of Asset objects\n   48  \tSIGNAL_ASSET_UPDATED = 602          # data is a tuple with (asset_id, locked_balance, free_balance)\n   49  \n\n/home/frederic/dev/trading/siis/connector/binance/client.py:\n  300                          \"symbol\": \"ETHBTC\",\n  301                          \"status\": \"TRADING\",\n  302:                         \"baseAsset\": \"ETH\",\n  303:                         \"baseAssetPrecision\": 8,\n  304:                         \"quoteAsset\": \"BTC\",\n  305                          \"quotePrecision\": 8,\n  306                          \"orderTypes\": [\"LIMIT\", \"MARKET\"],\n  ...\n  345                  \"symbol\": \"ETHBTC\",\n  346                  \"status\": \"TRADING\",\n  347:                 \"baseAsset\": \"ETH\",\n  348:                 \"baseAssetPrecision\": 8,\n  349:                 \"quoteAsset\": \"BTC\",\n  350                  \"quotePrecision\": 8,\n  351                  \"orderTypes\": [\"LIMIT\", \"MARKET\"],\n  ...\n 1152                          \"qty\": \"1.00000000\",\n 1153                          \"commission\": \"4.00000000\",\n 1154:                         \"commissionAsset\": \"USDT\"\n 1155                      },\n 1156                      {\n ....\n 1158                          \"qty\": \"5.00000000\",\n 1159                          \"commission\": \"19.99500000\",\n 1160:                         \"commissionAsset\": \"USDT\"\n 1161                      },\n 1162                      {\n ....\n 1164                          \"qty\": \"2.00000000\",\n 1165                          \"commission\": \"7.99600000\",\n 1166:                         \"commissionAsset\": \"USDT\"\n 1167                      },\n 1168                      {\n ....\n 1170                          \"qty\": \"1.00000000\",\n 1171                          \"commission\": \"3.99700000\",\n 1172:                         \"commissionAsset\": \"USDT\"\n 1173                      },\n 1174                      {\n ....\n 1176                          \"qty\": \"1.00000000\",\n 1177                          \"commission\": \"3.99500000\",\n 1178:                         \"commissionAsset\": \"USDT\"\n 1179                      }\n 1180                  ]\n ....\n 1655                      \"qty\": \"12.00000000\",\n 1656                      \"commission\": \"10.10000000\",\n 1657:                     \"commissionAsset\": \"BNB\",\n 1658                      \"time\": 1499865549590,\n 1659                      \"isBuyer\": true,\n ....\n 1744                                      \"operateTime\": \"2018-05-03 17:07:04\",\n 1745                                      \"transferedAmount\": \"0.000441\",\n 1746:                                     \"fromAsset\": \"USDT\"\n 1747                                  },\n 1748                                  {\n ....\n 1753                                      \"operateTime\": \"2018-05-03 17:07:04\",\n 1754                                      \"transferedAmount\": \"0.00088156\",\n 1755:                                     \"fromAsset\": \"ETH\"\n 1756                                  }\n 1757                              ],\n ....\n 1770                                      \"operateTime\": \"2018-05-02 13:52:24\",\n 1771                                      \"transferedAmount\": \"0.00049\",\n 1772:                                     \"fromAsset\": \"USDT\"\n 1773                                  },\n 1774                                  {\n ....\n 1779                                      \"operateTime\": \"2018-05-02 13:51:11\",\n 1780                                      \"transferedAmount\": \"0.00009795\",\n 1781:                                     \"fromAsset\": \"ETH\"\n 1782                                  }\n 1783                              ],\n ....\n 1791  \n 1792          \"\"\"\n 1793:         res = self._request_withdraw_api('get', 'userAssetDribbletLog.html', True, data=params)\n 1794          if not res['success']:\n 1795              raise BinanceWithdrawException(res['msg'])\n\n/home/frederic/dev/trading/siis/connector/kraken/connector.py:\n  129  \n  130      def instruments(self):\n  131:         data = self.query_public('AssetPairs')\n  132  \n  133          if not data:\n  ...\n  144  \n  145      def assets(self):\n  146:         data = self.query_public('Assets')\n  147  \n  148          if not data:\n\n/home/frederic/dev/trading/siis/database/database.py:\n   17  \n   18  from trader.market import Market\n   19: from trader.asset import Asset\n   20  \n   21  from config import utils\n\n/home/frederic/dev/trading/siis/database/mysql.py:\n   18  \n   19  from trader.market import Market\n   20: from trader.asset import Asset\n   21  \n   22  from .tickstorage import TickStorage, TickStreamer\n   ..\n  408  \n  409                      for row in rows:\n  410:                         asset = Asset(ua[1], row[0])\n  411  \n  412                          # only a sync will tell which quantity is free, which one is locked\n\n/home/frederic/dev/trading/siis/database/pgsql.py:\n   20  \n   21  from trader.market import Market\n   22: from trader.asset import Asset\n   23  \n   24  from .tickstorage import TickStorage, TickStreamer\n   ..\n  427  \n  428                      for row in rows:\n  429:                         asset = Asset(ua[1], row[0])\n  430  \n  431                          # only a sync will tell which quantity is free, which one is locked\n\n/home/frederic/dev/trading/siis/strategy/strategy.py:\n   27  from trader.order import Order\n   28  \n   29: from strategy.strategyassettrade import StrategyAssetTrade\n   30  from strategy.strategymargintrade import StrategyMarginTrade\n   31  from strategy.strategypositiontrade import StrategyPositionTrade\n   ..\n 1912          if strategy_trader.instrument.has_spot and not margin_trade:\n 1913              # market support spot and margin option is not defined\n 1914:             trade = StrategyAssetTrade(timeframe)\n 1915  \n 1916              # ajust max quantity according to free asset of quote, and convert in asset base quantity\n ....\n 2254              return results\n 2255  \n 2256:         trade = StrategyAssetTrade(timeframe)\n 2257  \n 2258          # user managed trade\n 2259          trade.set_user_trade()\n 2260  \n 2261:         trade._entry_state = StrategyAssetTrade.STATE_FILLED\n 2262:         trade._exit_state = StrategyAssetTrade.STATE_NEW\n 2263          \n 2264          trade.dir = Order.LONG\n\n/home/frederic/dev/trading/siis/strategy/strategyassettrade.py:\n   15  \n   16  \n   17: class StrategyAssetTrade(StrategyTrade):\n   18      \"\"\"\n   19      Specialization for asset buy/sell trading.\n\n/home/frederic/dev/trading/siis/strategy/strategytrader.py:\n   10  from datetime import datetime\n   11  \n   12: from strategy.strategyassettrade import StrategyAssetTrade\n   13  from strategy.strategyindmargintrade import StrategyIndMarginTrade\n   14  from strategy.strategymargintrade import StrategyMarginTrade\n   ..\n  211  \n  212          if trade_type == StrategyTrade.TRADE_BUY_SELL:\n  213:             trade = StrategyAssetTrade(0)\n  214          elif trade_type == StrategyTrade.TRADE_MARGIN:\n  215              trade = StrategyMarginTrade(0)\n\n/home/frederic/dev/trading/siis/strategy/bourricot/bourricotstrategytrader.py:\n    9  from trader.order import Order\n   10  \n   11: from strategy.strategyassettrade import StrategyAssetTrade\n   12  from strategy.strategyindmargintrade import StrategyIndMarginTrade\n   13  from strategy.strategymargintrade import StrategyMarginTrade\n   ..\n  123          if not self.trade_clazz:\n  124              if self.market_type == Instrument.TRADE_SPOT and self.instrument.has_spot:\n  125:                 self.trade_clazz = StrategyAssetTrade\n  126                  self.trade_short = False\n  127                  logger.info(\"Market type using asset trade for %s\" % self.instrument.market_id)\n\n/home/frederic/dev/trading/siis/strategy/cryptoalpha/castrategytrader.py:\n   10  \n   11  from strategy.timeframebasedstrategytrader import TimeframeBasedStrategyTrader\n   12: from strategy.strategyassettrade import StrategyAssetTrade\n   13  from strategy.strategysignal import StrategySignal\n   14  \n   ..\n  477  \n  478          if do_order:\n  479:             trade = StrategyAssetTrade(timeframe)\n  480  \n  481              # the new trade must be in the trades list if the event comes before, and removed after only it failed\n\n/home/frederic/dev/trading/siis/trader/asset.py:\n    9  \n   10  \n   11: class Asset(object):\n   12      \"\"\"\n   13:     Asset define a symbol and a balance, with margin or not. It is initially created for\n   14      use with binance.com but will be extended to any balance even for EUR or USD margin based broker,\n   15      in such we would check the asset balance before opening a position.\n\n/home/frederic/dev/trading/siis/trader/trader.py:\n 1013          Returns a table of any non empty assets.\n 1014          \"\"\"\n 1015:         columns = ('Asset', 'Locked', 'Free', 'Total', 'Avg price', 'Change', 'Change %',\n 1016                  'P/L %s' % self.account.currency, 'P/L %s' % self.account.alt_currency)\n 1017          total_size = (len(columns), 0)\n ....\n 1103          Returns a table of any followed markets.\n 1104          \"\"\"\n 1105:         columns = ('Broker', 'Account', 'Username', 'Email', 'Asset', 'Free Asset', 'Balance', 'Margin', 'Level', 'Net worth',\n 1106:                    'Risk limit', 'Unrealized P/L', 'Asset U. P/L', 'Asset U. P/L alt')\n 1107          data = []\n 1108  \n\n/home/frederic/dev/trading/siis/trader/connector/binance/trader.py:\n   14  from .account import BinanceAccount\n   15  \n   16: from trader.asset import Asset\n   17  from trader.position import Position\n   18  from trader.order import Order\n   ..\n  104                  symbols = self._watcher.connector.client.get_exchange_info()\n  105                  for symbol in symbols['symbols']:\n  106:                     if symbol['quoteAsset'] not in self._quotes:\n  107:                         self._quotes.append(symbol['quoteAsset'])\n  108  \n  109                  # and add any asset of the balance\n  ...\n  447          Fetch recent asset and update the average unit price per asset and set it into positions.\n  448  \n  449:         @note Asset must be fetch before from DB if existings.\n  450          \"\"\"\n  451          query_time = time.time()\n  ...\n  469              # for k, symbol in exchange_info.get('symbols', {}).items():\n  470              # store asset precisions\n  471:             symbols[symbol['baseAsset']] = {\n  472:                 'precision': symbol['baseAssetPrecision']\n  473              }\n  474:             symbols[symbol['quoteAsset']] = {\n  475                  'precision': symbol['quotePrecision']\n  476              }\n  ...\n  531                  # for dust in dust_log:\n  532                  #   for log in dust['logs']:\n  533:                 #       if log['fromAsset'] == asset_name:\n  534                  #           time = 0  # 'operateTime': '2018-10-08 20:11:18' @todo is UTC or LOCAL ? ...\n  535                  #           if time > last_update_time:  # strictly greater than\n  ...\n  577                              fee = 0.0\n  578                              # @todo compute withdraw fee\n  579:                             # fee = symbols[symbol['baseAsset']]['']\n  580  \n  581                              balance['trades'].append({\n  ...\n  610                              if timestamp >= last_update_time and trade['id'] > last_trade_id:\n  611                                  # compute the prefered quote-price\n  612:                                 quote_base = market['quoteAsset']\n  613:                                 quote_quote = market['quoteAsset']\n  614                                  quote_price = 1.0\n  615  \n  ...\n  641                                  # fee asset trade\n  642                                  if trade['commission']:\n  643:                                     fee_asset = trade['commissionAsset']\n  644                                      fee_quote = balances[fee_asset]['quote']\n  645  \n  ...\n  776              return self._assets[asset_name]\n  777  \n  778:         asset = Asset(self, asset_name, precision)\n  779          self._assets[asset_name] = asset\n  780  \n\n/home/frederic/dev/trading/siis/trader/connector/kraken/trader.py:\n   22  from trader.position import Position\n   23  from trader.order import Order\n   24: from trader.asset import Asset\n   25  \n   26  from connector.kraken.connector import Connector\n   ..\n  401              return self._assets[asset_name]\n  402  \n  403:         asset = Asset(self, asset_name, precision)\n  404          self._assets[asset_name] = asset\n  405  \n\n/home/frederic/dev/trading/siis/trader/connector/papertrader/papertraderspot.py:\n   10  from trader.position import Position\n   11  from trader.order import Order\n   12: from trader.asset import Asset\n   13  \n   14  import logging\n   ..\n   20          return trader._assets[asset_name]\n   21  \n   22:     asset = Asset(trader, asset_name, precision)\n   23      asset.quote = trader._account.currency\n   24  \n\n/home/frederic/dev/trading/siis/trader/connector/papertrader/trader.py:\n   18  from .account import PaperTraderAccount\n   19  from terminal.terminal import Terminal\n   20: from trader.asset import Asset\n   21  from trader.order import Order\n   22  from trader.position import Position\n   ..\n  468  \n  469      def create_asset(self, asset_name, quantity, price, quote, precision=8):\n  470:         asset = Asset(self, asset_name, precision)\n  471          asset.set_quantity(0, quantity)\n  472          asset.update_price(datetime.now(), 0, price, quote)\n\n/home/frederic/dev/trading/siis/view/assetview.py:\n    2  # @author Frederic SCHERMA\n    3  # @license Copyright (c) 2019 Dream Overflow\n    4: # Asset view.\n    5  \n    6  from terminal.terminal import Terminal\n    .\n   11  \n   12  \n   13: class AssetView(TableView):\n   14      \"\"\"\n   15:     Asset view.\n   16      \"\"\"\n   17  \n   ..\n   43                  error_logger.error(str(e))\n   44  \n   45:             self.set_title(\"Asset list (%i) trader %s on account %s\" % (num, trader.name, trader.account.name))\n   46          else:\n   47:             self.set_title(\"Asset list - No configured trader\")\n   48  \n\n/home/frederic/dev/trading/siis/view/defaultviews.py:\n   54  \n   55      # 'asset'\n   56:     from view.assetview import AssetView\n   57:     asset = AssetView(view_service, trader_service)\n   58      view_service.add_view(asset)\n   59  \n   60      # # 'orderbook'\n   61      # from view.orderbookview import OrderBookView\n   62:     # orderbook = AssetView(view_service, trader_service)\n   63      # view_service.add_view(orderbook)\n   64  \n\n/home/frederic/dev/trading/siis/watcher/connector/binance/watcher.py:\n  319              market.expiry = '-'\n  320  \n  321:             base_asset = symbol['baseAsset']\n  322:             market.set_base(base_asset, base_asset, symbol['baseAssetPrecision'])\n  323  \n  324:             quote_asset = symbol['quoteAsset']\n  325:             market.set_quote(quote_asset, symbol.get('quoteAssetUnit', quote_asset), symbol['quotePrecision'])\n  326  \n  327              # tick size at the base asset precision\n  328:             market.one_pip_means = math.pow(10.0, -symbol['baseAssetPrecision'])\n  329              market.value_per_pip = 1.0\n  330              market.contract_size = 1.0\n\n76 matches across 20 files\n\n\nSearching 309 files for \".assets(\" (case sensitive)\n\n/home/frederic/dev/trading/siis/watcher/connector/kraken/watcher.py:\n  103                          #\n  104  \n  105:                         self._assets = self._connector.assets()\n  106  \n  107                          for asset_name, details in self._assets.items():\n  ...\n  460          self._size_limits = self.service.watcher_config(self._name).get(\"size-limits\", {})\n  461  \n  462:         self._assets = self._connector.assets()\n  463          self._instruments = self._connector.instruments()\n  464  \n\n2 matches in 1 file\n\n\nSearching 309 files for \".account_id\" (case sensitive)\n\n/home/frederic/dev/trading/siis/trader/connector/binance/account.py:\n   51          if time.time() - self._last_update >= 1.0:\n   52              # its all what we have... nothing just our internal mapping\n   53:             self._name = connector.account_id\n   54  \n   55              # recompute the balance and free margin for each non-zero account balance\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 16430,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
 			"file": "trader/connector/binance/trader.py",
 			"settings":
 			{
-				"buffer_size": 46802,
-				"encoding": "UTF-8",
+				"buffer_size": 47412,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "watcher/connector/binance/watcher.py",
+			"file": "watcher/connector/kraken/watcher.py",
 			"settings":
 			{
-				"buffer_size": 33096,
-				"encoding": "UTF-8",
+				"buffer_size": 22751,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/tradingcommands.py",
-			"settings":
-			{
-				"buffer_size": 37454,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "watcher/watcher.py",
-			"settings":
-			{
-				"buffer_size": 19090,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "trader/trader.py",
-			"settings":
-			{
-				"buffer_size": 53670,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 309 files for \"._mutex.lock\" (case sensitive)\n\n0 matches",
-			"settings":
-			{
-				"buffer_size": 66,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
 			}
 		},
 		{
@@ -641,7 +621,7 @@
 			"file": "/home/frederic/.siis/config/appliances/kraken-eur-margin.json",
 			"settings":
 			{
-				"buffer_size": 8704,
+				"buffer_size": 8738,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -651,15 +631,6 @@
 			"settings":
 			{
 				"buffer_size": 36342,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "connector/binance/client.py",
-			"settings":
-			{
-				"buffer_size": 72476,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -1156,37 +1127,56 @@
 	"expanded_folders":
 	[
 		"/home/frederic/dev/trading/siis",
+		"/home/frederic/dev/trading/siis/connector",
+		"/home/frederic/dev/trading/siis/connector/kraken",
 		"/home/frederic/dev/trading/siis/strategy",
 		"/home/frederic/dev/trading/siis/strategy/bourricot"
 	],
 	"file_history":
 	[
+		"/home/frederic/.siis/config/identities.json",
+		"/home/frederic/dev/trading/siis/trader/connector/binance/account.py",
+		"/home/frederic/dev/trading/siis/trader/connector/bitmex/account.py",
+		"/home/frederic/dev/trading/siis/trader/asset.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/binance/watcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/kraken/watcher.py",
+		"/home/frederic/dev/trading/siis/connector/kraken/connector.py",
+		"/home/frederic/dev/trading/siis/config/watchers/kraken.com.json",
+		"/home/frederic/dev/trading/siis/strategy/strategy.py",
+		"/home/frederic/dev/trading/siis/trader/connector/kraken/account.py",
+		"/home/frederic/dev/trading/siis/trader/trader.py",
 		"/home/frederic/dev/trading/siis/trader/account.py",
+		"/home/frederic/dev/trading/siis/trader/connector/ig/account.py",
+		"/home/frederic/dev/trading/siis/trader/connector/ig/trader.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/ig/watcher.py",
+		"/home/frederic/dev/trading/siis/common/signal.py",
+		"/home/frederic/dev/trading/siis/view/signalview.py",
+		"/home/frederic/dev/trading/siis/trader/connector/binance/trader.py",
+		"/home/frederic/dev/trading/siis/connector/binance/client.py",
+		"/home/frederic/dev/trading/siis/strategy/strategytrader.py",
+		"/home/frederic/dev/trading/siis/trader/connector/bitmex/trader.py",
+		"/home/frederic/dev/trading/siis/trader/order.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/bitmex/watcher.py",
+		"/home/frederic/dev/trading/siis/watcher/watcher.py",
+		"/home/frederic/dev/trading/siis/app/tradingcommands.py",
+		"/home/frederic/dev/trading/siis/strategy/strategyassettrade.py",
+		"/home/frederic/dev/trading/siis/trader/market.py",
+		"/home/frederic/dev/trading/siis/common/utils.py",
+		"/home/frederic/dev/trading/siis/watcher/fetcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/tradingview/watcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/tiingo/watcher.py",
 		"/home/frederic/dev/trading/siis/terminal/terminal.py",
 		"/home/frederic/dev/trading/siis/strategy/service.py",
 		"/home/frederic/dev/trading/siis/notifier/service.py",
 		"/home/frederic/dev/trading/siis/common/runnable.py",
-		"/home/frederic/dev/trading/siis/strategy/strategy.py",
-		"/home/frederic/dev/trading/siis/strategy/strategytrader.py",
-		"/home/frederic/dev/trading/siis/strategy/strategyassettrade.py",
 		"/home/frederic/dev/trading/siis/view/service.py",
 		"/home/frederic/dev/trading/siis/trader/service.py",
 		"/home/frederic/dev/trading/siis/watcher/service.py",
 		"/home/frederic/dev/trading/siis/common/signalhandler.py",
 		"/home/frederic/dev/trading/siis/common/service.py",
-		"/home/frederic/dev/trading/siis/common/signal.py",
-		"/home/frederic/dev/trading/siis/trader/trader.py",
-		"/home/frederic/dev/trading/siis/trader/connector/binance/trader.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/kraken/watcher.py",
 		"/home/frederic/dev/trading/siis/trader/connector/kraken/trader.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/binance/watcher.py",
 		"/home/frederic/.siis/config/profiles/kraken-eur-margin.json",
 		"/home/frederic/.siis/config/profiles/binance-shit-signal.json",
-		"/home/frederic/dev/trading/siis/config/watchers/kraken.com.json",
-		"/home/frederic/dev/trading/siis/watcher/connector/ig/watcher.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/bitmex/watcher.py",
-		"/home/frederic/dev/trading/siis/watcher/watcher.py",
-		"/home/frederic/dev/trading/siis/trader/connector/ig/trader.py",
 		"/home/frederic/dev/trading/siis/terminal/command.py",
 		"/home/frederic/dev/trading/siis/trader/connector/papertrader/trader.py",
 		"/home/frederic/dev/trading/siis/database/database.py",
@@ -1202,7 +1192,6 @@
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotstoploss.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/atrsr/atrsr.py",
 		"/home/frederic/dev/trading/siis/notifier/discord/discordnotifier.py",
-		"/home/frederic/dev/trading/siis/view/signalview.py",
 		"/home/frederic/dev/trading/siis/notifier/android/androidnotifier.py",
 		"/home/frederic/dev/trading/siis/strategy/strategytrade.py",
 		"/home/frederic/dev/trading/siis/terminal/charmap.py",
@@ -1220,23 +1209,18 @@
 		"/home/frederic/dev/trading/siis/doc/indicator.md",
 		"/home/frederic/dev/trading/siis/strategy/crystalball/cbstrategytrader.py",
 		"/home/frederic/dev/trading/siis/strategy/timeframebasedstrategytrader.py",
-		"/home/frederic/dev/trading/siis/common/utils.py",
-		"/home/frederic/dev/trading/siis/trader/order.py",
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricottakeprofit.py",
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotatrsr.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/atr/atr.py",
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotconfig.py",
 		"/home/frederic/dev/trading/siis/trader/connector/papertrader/papertraderspot.py",
 		"/home/frederic/dev/trading/siis/trader/connector/papertrader/papertraderposition.py",
-		"/home/frederic/dev/trading/siis/trader/market.py",
 		"/home/frederic/.siis/config/profiles/prof-histdata-dax30-v01.json",
 		"/home/frederic/dev/trading/siis/instrument/instrument.py",
 		"/home/frederic/dev/trading/siis/trader/position.py",
 		"/home/frederic/dev/trading/siis/view/tickerview.py",
 		"/home/frederic/dev/trading/siis/view/accountview.py",
 		"/home/frederic/dev/trading/siis/view/orderview.py",
-		"/home/frederic/dev/trading/siis/trader/connector/bitmex/trader.py",
-		"/home/frederic/dev/trading/siis/app/tradingcommands.py",
 		"/home/frederic/dev/trading/siis/config/strategies.json",
 		"/home/frederic/dev/trading/siis/monitor/service.py",
 		"/home/frederic/dev/trading/siis/trader/connector/papertrader/papertraderindmargin.py",
@@ -1247,7 +1231,6 @@
 		"/home/frederic/dev/trading/siis/watcher/connector/siis/price.py",
 		"/home/frederic/dev/trading/siis/strategy/bourricot/pullbackppbbmax.py",
 		"/home/frederic/dev/trading/siis/trader/connector/papertrader/papertraderhistory.py",
-		"/home/frederic/dev/trading/siis/trader/connector/binance/account.py",
 		"/home/frederic/dev/trading/siis/config/traders/kraken.com.json",
 		"/home/frederic/dev/trading/siis/config/traders/histdata.com.json",
 		"/home/frederic/dev/trading/siis/config/traders/bitmex.com.json",
@@ -1276,19 +1259,9 @@
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotsub.py",
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotsubb.py",
 		"/home/frederic/dev/trading/siis/common/watchdog.py",
-		"/home/frederic/dev/trading/siis/trader/connector/ig/account.py",
 		"/home/frederic/dev/trading/siis/notifier/notifierexception.py",
 		"/home/frederic/dev/trading/siis/notifier/android/androidpush.py",
-		"/home/frederic/dev/trading/siis/config/watchers/ig.com.json",
-		"/home/frederic/dev/trading/siis/scripts/fetch-ig",
-		"/home/frederic/dev/trading/siis/database/ohlcstorage.py",
-		"/home/frederic/dev/trading/siis/database/pgsql.py",
-		"/home/frederic/dev/trading/siis/database/mysql.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/dummywatcher/watcher.py",
-		"/home/frederic/dev/trading/siis/connector/ig/lightstreamer.py",
-		"/home/frederic/dev/trading/siis/charting/charting.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/tradingview/watcher.py",
-		"/home/frederic/dev/trading/siis/database/tickstorage.py"
+		"/home/frederic/dev/trading/siis/config/watchers/ig.com.json"
 	],
 	"find":
 	{
@@ -1332,6 +1305,96 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".account_id",
+			"__get_or_add_asset",
+			"__get_or_add_asset\n",
+			"markets_id",
+			"self._assets",
+			".assets()",
+			".assets(",
+			"Asset",
+			"Assets",
+			"precision",
+			"__get_or_add_asset",
+			"decimals",
+			"__get_or_add_asset(",
+			"self._markets",
+			"self._quotes",
+			"_quotes",
+			"DASH",
+			"_quotes",
+			"add_asset",
+			"get_asset",
+			"REST_OR_WS",
+			"__fetch_assets",
+			"__fetch_account",
+			"__fetch_assets",
+			"get_balances",
+			"Balance",
+			"self._currency_ratio",
+			"currency_ratio",
+			"curre",
+			".currency_ratio",
+			"margin_",
+			"account.upd",
+			"balance",
+			"'balance'",
+			"\"balance\"",
+			"'balance'",
+			"('balance'",
+			"balance",
+			"'balance'",
+			"account",
+			"_risk_limit",
+			"risk_limit",
+			"asset_balance",
+			"_asset_balance",
+			"get_balances",
+			"'Balance'",
+			"client.create_order(",
+			"remove(",
+			".remove(",
+			"position_id",
+			"datetim",
+			"EGeneral",
+			".order_id",
+			"ref_order_id",
+			"post_",
+			"uuid",
+			"connector.",
+			".connector.",
+			"r.connector.",
+			"r.connector",
+			"create_order",
+			"__on_depth_data",
+			"def subscribe(self,",
+			"contract_size",
+			"BASE_QUOTE",
+			"backtrace",
+			"backtrace_",
+			"backtra",
+			"traceback.",
+			"fetch_orde",
+			"'quantity'",
+			"order.quantity = ",
+			"_last_tick",
+			"._last_tick",
+			"self._last_tick",
+			"_last_tick",
+			"self._last_tick",
+			"with self._mutex",
+			"with sel",
+			"lock",
+			"with sel",
+			"lock",
+			"notify(",
+			"has_market(",
+			"has_market",
+			"_mutex",
+			".asset(",
+			"self._mutex",
+			"lock()",
+			".lock()",
 			"._mutex.lock",
 			"._mutex.acquir",
 			"._mutex",
@@ -1369,97 +1432,7 @@
 			"def receiver(self, signal):",
 			"receiver(",
 			".lock(",
-			"mutex.lock(",
-			".acq",
-			".lock",
-			".acq",
-			"_mutex",
-			"def notify(",
-			"301",
-			"SIGNAL_MARKET_DATA",
-			"on_update_market",
-			"SIGNAL_MARKET_DATA",
-			"_last_trade_id",
-			"_mutex",
-			"lock",
-			"__update_asset",
-			"history_price",
-			"def history_price",
-			"asset_quantities",
-			"self._mutex",
-			"on_assets_loaded",
-			"backtrace_logger",
-			"__fetch_assets",
-			"self._symbols_data",
-			"symbols",
-			"__prefetch_markets",
-			"_symbols_data",
-			"__prefetch_markets",
-			"__fetch_markets",
-			"__matching_symbols",
-			"def subscribe(",
-			"unlock",
-			"lock",
-			"lock(",
-			"__on_trade_data",
-			"_initial_fetch",
-			"def subscribe(",
-			"_wsname_lookup",
-			".eror",
-			".eror(",
-			"def __prefetch_markets(",
-			"__configured_symbols",
-			"__configured_symbols\n",
-			"def subscribe",
-			"subscribe",
-			"__on_trade_data",
-			"SIGNAL_TICK_DATA",
-			"TICK",
-			"TICK\n",
-			"timeout-profit-loss",
-			"market",
-			"market.",
-			"market",
-			"market ",
-			"market",
-			"market.",
-			"market",
-			"siis.command",
-			"create_o",
-			"STATE_CANCELED",
-			"logger.info(",
-			"def has_quantity",
-			"Not enought free quote",
-			"load_assets",
-			"on_watcher_connected",
-			"on_assets_loaded",
-			"continue",
-			"wait",
-			"sleep",
-			"_request(",
-			"_get(",
-			"_request_api",
-			"_create_api_uri",
-			"version=",
-			"get_exchange_info",
-			"__fetch_assets",
-			"__fetch_orders",
-			"_request_api",
-			"def _get",
-			"PUBLIC_API_VERSION",
-			"PRIVATE_API_VERSION",
-			"open_orders",
-			"def open_or",
-			"__fetch_orders",
-			"_get",
-			"__fetch_orders",
-			"__fetch_orders\n",
-			"__fetch_orders",
-			"__fetch_positions",
-			"ma-bb-min-profit",
-			"pullback-min-profit",
-			"timeout-profit-loss",
-			"entry-timeout"
+			"mutex.lock("
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1605,7 +1578,7 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1635,7 +1608,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1665,7 +1638,7 @@
 						"translation.y": 951.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1695,7 +1668,7 @@
 						"translation.y": 825.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -1725,7 +1698,7 @@
 						"translation.y": 4332.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1734,15 +1707,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8428,
+						"buffer_size": 8395,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8016,
-								8016
+								1538,
+								1538
 							]
 						],
 						"settings":
@@ -1752,117 +1725,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1087.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "trader/connector/binance/trader.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 46802,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15288,
-								15288
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5879.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "watcher/connector/binance/watcher.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 33096,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17615,
-								17615
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6547.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/tradingcommands.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 37454,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19145,
-								19145
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7372.0,
+						"translation.y": 7.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "watcher/watcher.py",
+					"buffer": 5,
+					"file": "trader/connector/kraken/trader.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19090,
+						"buffer_size": 16012,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7040,
-								7040
+								14591,
+								14591
 							]
 						],
 						"settings":
@@ -1872,63 +1755,357 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3138.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "trader/trader.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 53670,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10808,
-								10808
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4582.0,
+						"translation.y": 6067.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 6,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 66,
+						"buffer_size": 16430,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										266,
+										271
+									],
+									[
+										597,
+										602
+									],
+									[
+										648,
+										653
+									],
+									[
+										705,
+										710
+									],
+									[
+										959,
+										964
+									],
+									[
+										1002,
+										1007
+									],
+									[
+										1051,
+										1056
+									],
+									[
+										1327,
+										1332
+									],
+									[
+										1561,
+										1566
+									],
+									[
+										1794,
+										1799
+									],
+									[
+										2027,
+										2032
+									],
+									[
+										2260,
+										2265
+									],
+									[
+										2478,
+										2483
+									],
+									[
+										2797,
+										2802
+									],
+									[
+										3107,
+										3112
+									],
+									[
+										3409,
+										3414
+									],
+									[
+										3719,
+										3724
+									],
+									[
+										3905,
+										3910
+									],
+									[
+										4195,
+										4200
+									],
+									[
+										4328,
+										4333
+									],
+									[
+										4508,
+										4513
+									],
+									[
+										4686,
+										4691
+									],
+									[
+										4855,
+										4860
+									],
+									[
+										5115,
+										5120
+									],
+									[
+										5284,
+										5289
+									],
+									[
+										5568,
+										5573
+									],
+									[
+										5910,
+										5915
+									],
+									[
+										6128,
+										6133
+									],
+									[
+										6284,
+										6289
+									],
+									[
+										6351,
+										6356
+									],
+									[
+										6528,
+										6533
+									],
+									[
+										6785,
+										6790
+									],
+									[
+										7049,
+										7054
+									],
+									[
+										7356,
+										7361
+									],
+									[
+										7699,
+										7704
+									],
+									[
+										8085,
+										8090
+									],
+									[
+										8239,
+										8244
+									],
+									[
+										8470,
+										8475
+									],
+									[
+										8511,
+										8516
+									],
+									[
+										8937,
+										8942
+									],
+									[
+										9298,
+										9303
+									],
+									[
+										9312,
+										9317
+									],
+									[
+										9422,
+										9427
+									],
+									[
+										9438,
+										9443
+									],
+									[
+										9642,
+										9647
+									],
+									[
+										9920,
+										9925
+									],
+									[
+										10013,
+										10018
+									],
+									[
+										10228,
+										10233
+									],
+									[
+										10505,
+										10510
+									],
+									[
+										10566,
+										10571
+									],
+									[
+										10644,
+										10649
+									],
+									[
+										10887,
+										10892
+									],
+									[
+										11288,
+										11293
+									],
+									[
+										11617,
+										11622
+									],
+									[
+										11691,
+										11696
+									],
+									[
+										11962,
+										11967
+									],
+									[
+										12150,
+										12155
+									],
+									[
+										12423,
+										12428
+									],
+									[
+										12581,
+										12586
+									],
+									[
+										12868,
+										12873
+									],
+									[
+										12986,
+										12991
+									],
+									[
+										13279,
+										13284
+									],
+									[
+										13488,
+										13493
+									],
+									[
+										13784,
+										13789
+									],
+									[
+										13885,
+										13890
+									],
+									[
+										13933,
+										13938
+									],
+									[
+										14067,
+										14072
+									],
+									[
+										14207,
+										14212
+									],
+									[
+										14373,
+										14378
+									],
+									[
+										14402,
+										14407
+									],
+									[
+										14600,
+										14605
+									],
+									[
+										14856,
+										14861
+									],
+									[
+										14935,
+										14940
+									],
+									[
+										15007,
+										15012
+									],
+									[
+										15081,
+										15086
+									],
+									[
+										15270,
+										15275
+									],
+									[
+										15634,
+										15642
+									],
+									[
+										15889,
+										15897
+									],
+									[
+										16298,
+										16309
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								15995,
+								15995
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 1,
+							"output_tag": 3,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1936,14 +2113,74 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6000.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 7,
+					"file": "trader/connector/binance/trader.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3745,
+								3745
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1207.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "watcher/connector/kraken/watcher.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3297,
+								3297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "strategy/bourricot/bourricotatrsr.py",
 					"semi_transient": false,
 					"settings":
@@ -1969,11 +2206,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 10,
 					"file": "/home/frederic/.siis/config/appliances/binance-bourricot-backtesting.json",
 					"semi_transient": false,
 					"settings":
@@ -1999,24 +2236,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 11,
 					"file": "/home/frederic/.siis/config/appliances/kraken-eur-margin.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8704,
+						"buffer_size": 8738,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8176,
-								8176
+								6924,
+								6924
 							]
 						],
 						"settings":
@@ -2026,14 +2263,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1282.0,
+						"translation.y": 1267.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 12,
 					"file": "strategy/strategytrade.py",
 					"semi_transient": false,
 					"settings":
@@ -2059,41 +2296,11 @@
 						"translation.y": 3787.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "connector/binance/client.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 72476,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8425,
-								8425
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3135.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 13,
 					"file": "/home/frederic/.siis/config/appliances/app-histdata-dax30-v01.json",
 					"semi_transient": false,
 					"settings":
@@ -2123,7 +2330,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 14,
 					"file": "/home/frederic/.siis/config/appliances/app-ig-dax30-v01.json",
 					"semi_transient": false,
 					"settings":
@@ -2149,7 +2356,7 @@
 						"translation.y": 982.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
@@ -2220,12 +2427,168 @@
 		"selected_items":
 		[
 			[
-				"runn",
-				"common/runnable.py"
+				"accou bin",
+				"trader/connector/binance/account.py"
+			],
+			[
+				"accou",
+				"trader/connector/bitmex/account.py"
+			],
+			[
+				"ass",
+				"trader/asset.py"
+			],
+			[
+				"asset",
+				"trader/asset.py"
+			],
+			[
+				"krak wet",
+				"watcher/connector/kraken/watcher.py"
+			],
+			[
+				"as",
+				"trader/asset.py"
+			],
+			[
+				"bintra",
+				"trader/connector/binance/trader.py"
+			],
+			[
+				"kra",
+				"config/watchers/kraken.com.json"
+			],
+			[
+				"trader bin",
+				"trader/connector/binance/trader.py"
+			],
+			[
+				"acc",
+				"trader/account.py"
+			],
+			[
+				"trad",
+				"trader/trader.py"
+			],
+			[
+				"trader ig",
+				"trader/connector/ig/trader.py"
+			],
+			[
+				"ig wat",
+				"watcher/connector/ig/watcher.py"
+			],
+			[
+				"sign",
+				"common/signal.py"
+			],
+			[
+				"sig",
+				"view/signalview.py"
+			],
+			[
+				"account bitm",
+				"trader/connector/bitmex/account.py"
+			],
+			[
+				"account bi",
+				"trader/connector/binance/account.py"
+			],
+			[
+				"account ig",
+				"trader/connector/ig/account.py"
+			],
+			[
+				"bit accoun",
+				"trader/connector/bitmex/account.py"
+			],
+			[
+				"acco",
+				"trader/account.py"
+			],
+			[
+				"accou ig",
+				"trader/connector/ig/account.py"
 			],
 			[
 				"trader",
 				"trader/trader.py"
+			],
+			[
+				"acc kr",
+				"trader/connector/kraken/account.py"
+			],
+			[
+				"wat kr",
+				"watcher/connector/kraken/watcher.py"
+			],
+			[
+				"client b",
+				"connector/binance/client.py"
+			],
+			[
+				"ytrader",
+				"strategy/strategytrader.py"
+			],
+			[
+				"str",
+				"strategy/strategy.py"
+			],
+			[
+				"trader bit",
+				"trader/connector/bitmex/trader.py"
+			],
+			[
+				"bin tra",
+				"trader/connector/binance/trader.py"
+			],
+			[
+				"order",
+				"trader/order.py"
+			],
+			[
+				"ord",
+				"trader/order.py"
+			],
+			[
+				"orde",
+				"trader/order.py"
+			],
+			[
+				"",
+				"trader/connector/kraken/trader.py"
+			],
+			[
+				"account kr",
+				"trader/connector/kraken/account.py"
+			],
+			[
+				"accoun",
+				"trader/connector/binance/account.py"
+			],
+			[
+				"util",
+				"common/utils.py"
+			],
+			[
+				"market",
+				"trader/market.py"
+			],
+			[
+				"trader kr",
+				"trader/connector/kraken/trader.py"
+			],
+			[
+				"shit",
+				"~/.siis/config/appliances/binance-shit-signal.json"
+			],
+			[
+				"watc bit",
+				"watcher/connector/bitmex/watcher.py"
+			],
+			[
+				"runn",
+				"common/runnable.py"
 			],
 			[
 				"trader bi",
@@ -2240,14 +2603,6 @@
 				"strategy/strategy.py"
 			],
 			[
-				"ytrader",
-				"strategy/strategytrader.py"
-			],
-			[
-				"asset",
-				"strategy/strategyassettrade.py"
-			],
-			[
 				"serv tr",
 				"trader/service.py"
 			],
@@ -2260,16 +2615,8 @@
 				"watcher/connector/binance/watcher.py"
 			],
 			[
-				"trader bin",
-				"trader/connector/binance/trader.py"
-			],
-			[
 				"watch kr",
 				"watcher/connector/kraken/watcher.py"
-			],
-			[
-				"trader kr",
-				"trader/connector/kraken/trader.py"
 			],
 			[
 				"watch bin",
@@ -2326,10 +2673,6 @@
 			[
 				"clie",
 				"connector/binance/client.py"
-			],
-			[
-				"bin tra",
-				"trader/connector/binance/trader.py"
 			],
 			[
 				"stra",
@@ -2406,14 +2749,6 @@
 			[
 				"and",
 				"notifier/android/androidnotifier.py"
-			],
-			[
-				"sign",
-				"view/signalview.py"
-			],
-			[
-				"sig",
-				"view/signalview.py"
 			],
 			[
 				"siis",
@@ -2540,18 +2875,6 @@
 				"strategy/bourricot/bourricotsuba.py"
 			],
 			[
-				"str",
-				"strategy/strategy.py"
-			],
-			[
-				"orde",
-				"trader/order.py"
-			],
-			[
-				"",
-				"strategy/strategytrade.py"
-			],
-			[
 				"ytrade",
 				"strategy/strategytrader.py"
 			],
@@ -2576,10 +2899,6 @@
 				"watcher/connector/ig/watcher.py"
 			],
 			[
-				"trader ig",
-				"trader/connector/ig/trader.py"
-			],
-			[
 				"instr",
 				"instrument/instrument.py"
 			],
@@ -2590,10 +2909,6 @@
 			[
 				"posi",
 				"trader/position.py"
-			],
-			[
-				"order",
-				"trader/order.py"
 			],
 			[
 				"trader.py",
@@ -2622,114 +2937,6 @@
 			[
 				"inst",
 				"instrument/instrument.py"
-			],
-			[
-				"trader bina",
-				"trader/connector/binance/trader.py"
-			],
-			[
-				"trader.p",
-				"trader/trader.py"
-			],
-			[
-				"in",
-				"instrument/instrument.py"
-			],
-			[
-				"trader ",
-				"trader/trader.py"
-			],
-			[
-				"ins",
-				"instrument/instrument.py"
-			],
-			[
-				"bitme trad",
-				"trader/connector/bitmex/trader.py"
-			],
-			[
-				"bina tradr",
-				"trader/connector/binance/trader.py"
-			],
-			[
-				"accou bin",
-				"trader/connector/binance/account.py"
-			],
-			[
-				"trader.json",
-				"config/traders/ig.com.json"
-			],
-			[
-				"REA",
-				"README.md"
-			],
-			[
-				"run",
-				"common/runnable.py"
-			],
-			[
-				"command",
-				"app/tradingcommands.py"
-			],
-			[
-				"trader .py",
-				"trader/trader.py"
-			],
-			[
-				"watch bnin",
-				"watcher/connector/binance/watcher.py"
-			],
-			[
-				"watch ig",
-				"watcher/connector/ig/watcher.py"
-			],
-			[
-				"term",
-				"terminal/terminal.py"
-			],
-			[
-				"positra",
-				"strategy/strategypositiontrade.py"
-			],
-			[
-				"noti",
-				"notifier/notifier.py"
-			],
-			[
-				"ser not",
-				"notifier/service.py"
-			],
-			[
-				"ntif",
-				"notifier/notifier.py"
-			],
-			[
-				"serv no",
-				"notifier/service.py"
-			],
-			[
-				"not",
-				"notifier/notifier.py"
-			],
-			[
-				"desktop",
-				"notifier/desktop/desktopnotifier.py"
-			],
-			[
-				"dkes",
-				"config/notifiers/desktop.json"
-			],
-			[
-				"notif",
-				"notifier/notifier.py"
-			],
-			[
-				"notif se",
-				"notifier/service.py"
-			],
-			[
-				"tradcomma",
-				"app/tradingcommands.py"
 			]
 		],
 		"width": 0.0
