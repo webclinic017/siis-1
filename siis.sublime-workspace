@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"max",
+				"max_err"
+			],
+			[
+				"e",
+				"encryption"
+			],
+			[
 				"count",
 				"countdown"
 			],
@@ -206,10 +214,6 @@
 			[
 				"en",
 				"entry"
-			],
-			[
-				"max",
-				"max_factor"
 			],
 			[
 				"hi",
@@ -510,10 +514,6 @@
 			[
 				"on",
 				"one_pip_means"
-			],
-			[
-				"fro",
-				"from_date"
 			]
 		]
 	},
@@ -533,6 +533,33 @@
 			"settings":
 			{
 				"buffer_size": 40684,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "connector/binance/client.py",
+			"settings":
+			{
+				"buffer_size": 73278,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "watcher/fetcher.py",
+			"settings":
+			{
+				"buffer_size": 17395,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "connector/ig/connector.py",
+			"settings":
+			{
+				"buffer_size": 4977,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -1054,10 +1081,19 @@
 	},
 	"expanded_folders":
 	[
-		"/home/frederic/dev/trading/siis"
+		"/home/frederic/dev/trading/siis",
+		"/home/frederic/dev/trading/siis/connector",
+		"/home/frederic/dev/trading/siis/connector/binance"
 	],
 	"file_history":
 	[
+		"/home/frederic/dev/trading/siis/watcher/connector/ig/watcher.py",
+		"/home/frederic/dev/trading/siis/connector/ig/lightstreamer.py",
+		"/home/frederic/dev/trading/siis/connector/ig/rest.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/ig/fetcher.py",
+		"/home/frederic/dev/trading/siis/tools/syncer.py",
+		"/home/frederic/dev/trading/siis/deps/requirements.txt",
+		"/home/frederic/dev/trading/siis/connector/ig/stream.py",
 		"/home/frederic/dev/trading/siis/strategy/strategy.py",
 		"/home/frederic/dev/trading/siis/scripts/fetch-binance-big",
 		"/home/frederic/dev/trading/siis/tools/fetcher.py",
@@ -1082,7 +1118,6 @@
 		"/home/frederic/dev/trading/siis/config/utils.py",
 		"/home/frederic/dev/trading/siis/database/mysql.py",
 		"/home/frederic/dev/trading/siis/config/databases.json",
-		"/home/frederic/dev/trading/siis/deps/requirements.txt",
 		"/home/frederic/dev/trading/siis/sql/initpg.sql",
 		"/home/frederic/dev/trading/siis/strategy/alert/pricealert.py",
 		"/home/frederic/dev/trading/siis/config/regions.json",
@@ -1128,7 +1163,6 @@
 		"/home/frederic/dev/trading/siis/strategy/strategyalert.py",
 		"/home/frederic/dev/trading/siis/common/signal.py",
 		"/home/frederic/dev/trading/siis/tools/cleaner.py",
-		"/home/frederic/dev/trading/siis/tools/syncer.py",
 		"/home/frederic/dev/trading/siis/tools/binarizer.py",
 		"/home/frederic/dev/trading/siis/database/tickstorage.py",
 		"/home/frederic/dev/trading/siis/watcher/fetcher.py",
@@ -1136,7 +1170,6 @@
 		"/home/frederic/dev/trading/siis/strategy/forexalpha/fastrategytrader.py",
 		"/home/frederic/dev/trading/siis/watcher/connector/bitmex/fetcher.py",
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotsubc.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/ig/watcher.py",
 		"/home/frederic/dev/trading/siis/trader/market.py",
 		"/home/frederic/dev/trading/siis/scripts/fetch-ig",
 		"/home/frederic/dev/trading/siis/strategy/indicator/bollingerbands/bollingerbands.py",
@@ -1176,16 +1209,12 @@
 		"/home/frederic/dev/trading/siis/strategy/indicator/rsi/rsi.py",
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotreport.py",
 		"/home/frederic/dev/trading/siis/trader/connector/ig/trader.py",
-		"/home/frederic/dev/trading/siis/connector/ig/rest.py",
-		"/home/frederic/dev/trading/siis/connector/ig/lightstreamer.py",
 		"/home/frederic/dev/trading/siis/watcher/connector/histdata/fetcher.py",
 		"/home/frederic/dev/trading/history/scripts/initial-import-ig-mt4",
 		"/home/frederic/dev/trading/siis/tools/tool.py",
 		"/home/frederic/dev/trading/siis/deps/ta-lib/bin",
 		"/home/frederic/dev/trading/webhooks-discord.txt",
-		"/home/frederic/dev/trading/siis/trader/service.py",
-		"/home/frederic/dev/trading/siis/monitor/client/__init__.py",
-		"/home/frederic/dev/trading/siis/__init__.py"
+		"/home/frederic/dev/trading/siis/trader/service.py"
 	],
 	"find":
 	{
@@ -1235,6 +1264,16 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"_create_first",
+			"absolute_import",
+			"division",
+			"print_function",
+			"IGStreamService",
+			".connect(",
+			"connect(",
+			".create_session",
+			"IGStreamService",
+			"crud_session",
 			"json.loads(",
 			"==",
 			"WHERE",
@@ -1352,17 +1391,7 @@
 			"trade_type_to_str",
 			"StrategySignalContext",
 			"notify_trade_update",
-			"SIGNAL_STRATEGY_SIGNAL_EXIT",
-			"get_la",
-			"TickStorage",
-			"TickStor",
-			"_struct.unpack",
-			"_struct.unpack\n",
-			"_file.seek(",
-			"'\\n",
-			"_file.read(",
-			"_file.read(\n",
-			"direcrly"
+			"SIGNAL_STRATEGY_SIGNAL_EXIT"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1538,7 +1567,7 @@
 						"translation.y": 1072.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1554,8 +1583,8 @@
 						"selection":
 						[
 							[
-								27951,
-								27951
+								9348,
+								9348
 							]
 						],
 						"settings":
@@ -1565,7 +1594,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10248.0,
+						"translation.y": 2931.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1573,6 +1602,96 @@
 				},
 				{
 					"buffer": 2,
+					"file": "connector/binance/client.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 73278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28455,
+								28455
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 11402.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "watcher/fetcher.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10171,
+								10171
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3081.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "connector/ig/connector.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2221,
+								2221
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "strategy/bourricot/bourricotstrategytrader.py",
 					"semi_transient": false,
 					"settings":
@@ -1598,11 +1717,11 @@
 						"translation.y": 810.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 6,
 					"file": "strategy/strategysignal.py",
 					"semi_transient": false,
 					"settings":
@@ -1628,11 +1747,11 @@
 						"translation.y": 3348.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "config/alerts.json",
 					"semi_transient": false,
 					"settings":
@@ -1658,11 +1777,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 8,
 					"file": "app/alertcommands.py",
 					"semi_transient": false,
 					"settings":
@@ -1688,11 +1807,11 @@
 						"translation.y": 786.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 9,
 					"file": "strategy/region/rangeregion.py",
 					"semi_transient": false,
 					"settings":
@@ -1718,7 +1837,7 @@
 						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1788,6 +1907,46 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"clien",
+				"connector/binance/client.py"
+			],
+			[
+				"ligh",
+				"connector/ig/lightstreamer.py"
+			],
+			[
+				"watch ig",
+				"watcher/connector/ig/watcher.py"
+			],
+			[
+				"syncer",
+				"tools/syncer.py"
+			],
+			[
+				"fetc",
+				"watcher/fetcher.py"
+			],
+			[
+				"req",
+				"deps/requirements.txt"
+			],
+			[
+				"fetcher ig",
+				"watcher/connector/ig/fetcher.py"
+			],
+			[
+				"watcher ig",
+				"watcher/connector/ig/watcher.py"
+			],
+			[
+				"strea",
+				"connector/ig/stream.py"
+			],
+			[
+				"rest",
+				"connector/ig/rest.py"
+			],
 			[
 				"fetcher",
 				"tools/fetcher.py"
@@ -1875,10 +2034,6 @@
 			[
 				"region",
 				"strategy/region/rangeregion.py"
-			],
-			[
-				"req",
-				"deps/requirements.txt"
 			],
 			[
 				"re",
@@ -2093,10 +2248,6 @@
 				"trader/market.py"
 			],
 			[
-				"watcher ig",
-				"watcher/connector/ig/watcher.py"
-			],
-			[
 				"rebuil",
 				"tools/rebuilder.py"
 			],
@@ -2267,38 +2418,6 @@
 			[
 				"watcher kra",
 				"watcher/connector/kraken/watcher.py"
-			],
-			[
-				"watc ig",
-				"watcher/connector/ig/watcher.py"
-			],
-			[
-				"watcher bin",
-				"watcher/connector/binance/watcher.py"
-			],
-			[
-				"watchr ig",
-				"watcher/connector/ig/watcher.py"
-			],
-			[
-				"watcher bitm",
-				"watcher/connector/bitmex/watcher.py"
-			],
-			[
-				"connect",
-				"connector/bitmex/connector.py"
-			],
-			[
-				"bouco",
-				"strategy/bourricot/bourricotconfig.py"
-			],
-			[
-				"export ig",
-				"scripts/export-ig-siis.py"
-			],
-			[
-				"icih",
-				"strategy/indicator/ichimoku/ichimoku.py"
 			]
 		],
 		"width": 0.0
