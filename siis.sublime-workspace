@@ -4,8 +4,80 @@
 		"selected_items":
 		[
 			[
+				"last",
+				"last_tickbar"
+			],
+			[
+				"_tic",
+				"_tick_size"
+			],
+			[
+				"_l",
+				"_low"
+			],
+			[
+				"_ti",
+				"_tick_size"
+			],
+			[
+				"la",
+				"last_tickbar"
+			],
+			[
+				"tic",
+				"tick_size"
+			],
+			[
+				"Tic",
+				"TickBar"
+			],
+			[
 				"_la",
-				"_last_tr"
+				"_last_timestamp"
+			],
+			[
+				"_pov",
+				"_pov_ofr"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"_c",
+				"_close"
+			],
+			[
+				"_ope",
+				"_open_bid"
+			],
+			[
+				"_op",
+				"_open_ofr"
+			],
+			[
+				"pr",
+				"price"
+			],
+			[
+				"_cl",
+				"_close_ofr"
+			],
+			[
+				"tick",
+				"tickbar"
+			],
+			[
+				"_tc",
+				"_tickbars"
+			],
+			[
+				"pn",
+				"pnl_pct"
+			],
+			[
+				"_vo",
+				"_volumes_dev"
 			],
 			[
 				"_pr",
@@ -14,10 +86,6 @@
 			[
 				"bas",
 				"basis2"
-			],
-			[
-				"time",
-				"timeframe"
 			],
 			[
 				"_v",
@@ -38,10 +106,6 @@
 			[
 				"r",
 				"return"
-			],
-			[
-				"pr",
-				"profile_trader_config"
 			],
 			[
 				"timefr",
@@ -162,10 +226,6 @@
 			[
 				"vol",
 				"vol24"
-			],
-			[
-				"tic",
-				"tickers"
 			],
 			[
 				"hi",
@@ -388,10 +448,6 @@
 				"profiles"
 			],
 			[
-				"last",
-				"last_price"
-			],
-			[
 				"st",
 				"stochrsi"
 			],
@@ -458,136 +514,52 @@
 			[
 				"utf",
 				"utf-8"
-			],
-			[
-				"__ap",
-				"__api_secret"
-			],
-			[
-				"chec",
-				"check_auth_token"
-			],
-			[
-				"__a",
-				"__api_key"
-			],
-			[
-				"__p",
-				"__api_secret"
-			],
-			[
-				"__pa",
-				"__api_key"
-			],
-			[
-				"api",
-				"api_secret"
-			],
-			[
-				"ap",
-				"api_key"
-			],
-			[
-				"mn",
-				"monitor_service"
-			],
-			[
-				"moni",
-				"monitor_service"
-			],
-			[
-				"char",
-				"charting"
-			],
-			[
-				"read",
-				"read_value"
-			],
-			[
-				"read_flo",
-				"read_float_scatter"
-			],
-			[
-				"read_int",
-				"read_int_list"
-			],
-			[
-				"read_fl",
-				"read_float"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "strategy/firebird/strategytrader.py",
+			"file": "instrument/candlegenerator.py",
 			"settings":
 			{
-				"buffer_size": 42865,
+				"buffer_size": 7449,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "strategy/firebird/parameters.py",
+			"file": "strategy/tickbarbasedstrategytrader.py",
 			"settings":
 			{
-				"buffer_size": 4675,
+				"buffer_size": 9887,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "strategy/firebird/suba.py",
+			"file": "instrument/tickbargenerator.py",
 			"settings":
 			{
-				"buffer_size": 5460,
+				"buffer_size": 5898,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "strategy/firebird/bounce.py",
+			"file": "instrument/tickbar.py",
 			"settings":
 			{
-				"buffer_size": 20588,
+				"buffer_size": 4835,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "monitor/web/js/trading.js",
+			"file": "strategy/strategy.py",
 			"settings":
 			{
-				"buffer_size": 33817,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "monitor/http/httprestserver.py",
-			"settings":
-			{
-				"buffer_size": 16911,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "monitor/web/js/charting.js",
-			"settings":
-			{
-				"buffer_size": 3010,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "monitor/web/js/webtrader.js",
-			"settings":
-			{
-				"buffer_size": 40112,
-				"encoding": "UTF-8",
+				"buffer_size": 101074,
 				"line_ending": "Unix"
 			}
 		}
@@ -1082,59 +1054,95 @@
 	"expanded_folders":
 	[
 		"/home/frederic/dev/trading/siis",
-		"/home/frederic/dev/trading/siis/monitor",
-		"/home/frederic/dev/trading/siis/monitor/web",
-		"/home/frederic/dev/trading/siis/monitor/web/js",
-		"/home/frederic/dev/trading/siis/strategy",
-		"/home/frederic/dev/trading/siis/strategy/firebird",
-		"/home/frederic/dev/trading/siis/strategy/indicator",
-		"/home/frederic/dev/trading/siis/strategy/indicator/stddevbands"
+		"/home/frederic/dev/trading/siis/instrument",
+		"/home/frederic/dev/trading/siis/strategy"
 	],
 	"file_history":
 	[
+		"/home/frederic/dev/trading/siis/instrument/instrument.py",
+		"/home/frederic/dev/trading/siis/database/tickstorage.py",
+		"/home/frederic/dev/trading/siis/instrument/tickbar.py",
+		"/home/frederic/dev/trading/siis/strategy/strategytrader.py",
+		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotstrategytrader.py",
+		"/home/frederic/dev/trading/siis/strategy/timeframebasedstrategytrader.py",
+		"/home/frederic/dev/trading/siis/strategy/indicator/vwap/vwap.py",
+		"/home/frederic/dev/trading/siis/strategy/sentinel/parameters.py",
+		"/home/frederic/dev/trading/siis/strategy/sentinel/config.py",
+		"/home/frederic/dev/trading/siis/strategy/sentinel/__init__.py",
+		"/home/frederic/dev/trading/siis/strategy/sentinel/strategytrader.py",
+		"/home/frederic/dev/trading/siis/strategy/sentinel/strategy.py",
+		"/home/frederic/dev/trading/siis/monitor/web/js/trading.js",
+		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotparameters.py",
+		"/home/frederic/dev/trading/siis/monitor/http/httprestserver.py",
+		"/home/frederic/dev/trading/siis/strategy/firebird/suba.py",
+		"/home/frederic/dev/trading/siis/trader/connector/binancefutures/trader.py",
+		"/home/frederic/dev/trading/siis/strategy/firebird/strategytrader.py",
+		"/home/frederic/dev/trading/siis/strategy/firebird/bounce.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/stddevbands/stddevbands.py",
+		"/home/frederic/dev/trading/siis/trader/service.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/binance/watcher.py",
+		"/home/frederic/dev/trading/siis/strategy/indicator/rsi/rsi.py",
+		"/home/frederic/dev/trading/siis/trader/market.py",
+		"/home/frederic/dev/trading/siis/trader/connector/binance/trader.py",
+		"/home/frederic/dev/trading/siis/strategy/firebird/parameters.py",
+		"/home/frederic/dev/trading/siis/monitor/web/js/webtrader.js",
+		"/home/frederic/dev/trading/siis/connector/binance/websockets.py",
+		"/home/frederic/dev/trading/siis/strategy/strategy.py",
+		"/home/frederic/dev/trading/siis/app/regioncommands.py",
+		"/home/frederic/dev/trading/siis/strategy/indicator/stochrsi/stochrsi.py",
+		"/home/frederic/dev/trading/siis/trader/trader.py",
+		"/home/frederic/dev/trading/siis/monitor/web/js/charting.js",
+		"/home/frederic/dev/trading/siis/watcher/connector/kraken/fetcher.py",
+		"/home/frederic/dev/trading/siis/connector/kraken/connector.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/kraken/watcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/binancefutures/watcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/tiingo/fetcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/tickstory/fetcher.py",
+		"/home/frederic/dev/trading/siis/connector/bitmex/connector.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/ig/fetcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/histdata/fetcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/bitmex/fetcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/binancefutures/fetcher.py",
+		"/home/frederic/dev/trading/siis/connector/binance/client.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/binance/fetcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/alphavantage/fetcher.py",
+		"/home/frederic/dev/trading/siis/watcher/fetcher.py",
+		"/home/frederic/dev/trading/siis/database/database.py",
+		"/home/frederic/dev/trading/siis/tools/importer.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/ig/watcher.py",
+		"/home/frederic/dev/trading/siis/watcher/connector/bitmex/watcher.py",
+		"/home/frederic/dev/trading/siis/tools/fetcher.py",
 		"/home/frederic/dev/trading/siis/config/indicators.json",
 		"/home/frederic/dev/trading/siis/strategy/indicator/stddev/__init__.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/stddev/stddev.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/bollingerbands/bollingerbands.py",
-		"/home/frederic/dev/trading/siis/strategy/strategytrader.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/sma/sma.py",
-		"/home/frederic/dev/trading/siis/strategy/indicator/rsi/rsi.py",
 		"/home/frederic/dev/trading/siis/strategy/firebird/subi.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/atrsr/atrsr.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/dmi/dmi.py",
 		"/home/frederic/dev/trading/siis/strategy/firebird/config.py",
 		"/home/frederic/dev/trading/siis/monitor/web/js/signals.js",
-		"/home/frederic/dev/trading/siis/strategy/indicator/vwap/vwap.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/price/price.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/indicator.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/tomdemark/tomdemark.py",
 		"/home/frederic/dev/trading/siis/database/pgsql.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/volume/volume.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/vwap/__init__.py",
-		"/home/frederic/dev/trading/siis/trader/service.py",
 		"/home/frederic/dev/trading/siis/strategy/service.py",
 		"/home/frederic/dev/trading/siis/watcher/service.py",
 		"/home/frederic/dev/trading/siis/siis.py",
-		"/home/frederic/dev/trading/siis/strategy/timeframebasedstrategytrader.py",
-		"/home/frederic/dev/trading/siis/strategy/strategy.py",
 		"/home/frederic/dev/trading/siis/common/utils.py",
 		"/home/frederic/dev/trading/siis/charting/charting.py",
-		"/home/frederic/dev/trading/siis/strategy/firebird/suba.py",
 		"/home/frederic/dev/trading/siis/strategy/timeframebasedsub.py",
 		"/home/frederic/dev/trading/siis/trader/connector/papertrader/trader.py",
 		"/home/frederic/dev/trading/siis/trader/connector/papertrader/papertraderposition.py",
 		"/home/frederic/dev/trading/siis/strategy/indicator/stochastic/stochastic.py",
 		"/home/frederic/dev/trading/siis/trader/connector/ig/trader.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/ig/watcher.py",
 		"/tmp/fz3temp-2/dax30-bounce-1m-v01.json",
-		"/home/frederic/dev/trading/siis/strategy/indicator/stochrsi/stochrsi.py",
 		"/home/frederic/dev/trading/siis/notifier/notifier.py",
 		"/home/frederic/dev/trading/siis/monitor/web/index.html",
 		"/tmp/fz3temp-2/any-bounce-01.json",
 		"/tmp/fz3temp-2/any-v01.json",
-		"/home/frederic/dev/trading/siis/monitor/http/httprestserver.py",
-		"/home/frederic/dev/trading/siis/monitor/web/js/charting.js",
 		"/home/frederic/dev/trading/siis/monitor/web/css/webtrader.css",
 		"/home/frederic/dev/trading/siis/monitor/web/js/notification.js",
 		"/home/frederic/dev/trading/siis/monitor/web/js/alerts.js",
@@ -1159,67 +1167,26 @@
 		"/home/frederic/dev/trading/siis/strategy/takeprofit.py",
 		"/home/frederic/dev/trading/siis/strategy/strategysignalcontext.py",
 		"/home/frederic/dev/trading/siis/TODO",
-		"/home/frederic/dev/trading/siis/monitor/web/js/webtrader.js",
-		"/home/frederic/dev/trading/siis/monitor/web/js/trading.js",
 		"/home/frederic/dev/trading/siis/strategy/indicator/hma/hma.py",
 		"/home/frederic/dev/trading/siis/strategy/firebird/dispatcher.py",
-		"/home/frederic/dev/trading/siis/strategy/firebird/bounce.py",
-		"/home/frederic/dev/trading/siis/instrument/instrument.py",
 		"/home/frederic/dev/trading/siis/view/traderstateview.py",
 		"/home/frederic/dev/trading/siis/strategy/helpers/traderstatedataset.py",
 		"/home/frederic/dev/trading/siis/strategy/scalpspectre/scalpspectrestrategytrader.py",
-		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotstrategytrader.py",
 		"/home/frederic/dev/trading/siis/strategy/stoploss.py",
 		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotconfig.py",
-		"/home/frederic/dev/trading/siis/strategy/firebird/parameters.py",
 		"/home/frederic/dev/trading/siis/strategy/scalpspectre/scalpspectreconfig.py",
 		"/home/frederic/dev/trading/siis/strategy/firebird/subb.py",
 		"/home/frederic/dev/trading/siis/deps/ta-lib/src/tools/ta_regtest/.deps/ta_regtest-test_internals.Po",
 		"/home/frederic/dev/trading/siis/strategy/scalpspectre/scalpspectrestoploss.py",
 		"/home/frederic/dev/trading/siis/strategy/firebird/takeprofit.py",
 		"/home/frederic/dev/trading/siis/strategy/firebird/stoploss.py",
-		"/home/frederic/dev/trading/siis/strategy/firebird/strategytrader.py",
 		"/home/frederic/dev/trading/siis/strategy/config.py",
 		"/home/frederic/dev/trading/siis/strategy/firebird/sub.py",
 		"/home/frederic/dev/trading/siis/strategy/firebird/strategy.py",
 		"/home/frederic/dev/trading/siis/monitor/streamable.py",
 		"/home/frederic/dev/trading/siis/notifier/desktop/desktopnotifier.py",
 		"/home/frederic/dev/trading/siis/strategy/strategytrade.py",
-		"/home/frederic/dev/trading/siis/trader/trader.py",
-		"/home/frederic/dev/trading/siis/connector/kraken/connector.py",
-		"/home/frederic/dev/trading/siis/config/alerts.json",
-		"/home/frederic/dev/trading/siis/monitor/web/js/websocket.js",
-		"/home/frederic/dev/trading/siis/strategy/strategysignal.py",
-		"/home/frederic/dev/trading/siis/strategy/alert/alert.py",
-		"/home/frederic/dev/trading/siis/monitor/client/README.md",
-		"/home/frederic/dev/trading/siis/monitor/rpc.py",
-		"/home/frederic/dev/trading/siis/monitor/service.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/binancefutures/watcher.py",
-		"/home/frederic/dev/trading/siis/common/service.py",
-		"/home/frederic/dev/trading/siis/connector/ig/lightstreamer.py",
-		"/home/frederic/dev/trading/siis/app/tradingcommands.py",
-		"/home/frederic/dev/trading/siis/monitor/http/httpwsserver.py",
-		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotparameters.py",
-		"/home/frederic/dev/trading/siis/strategy/strategyindmargintrade.py",
-		"/home/frederic/dev/trading/siis/trader/connector/binancefutures/trader.py",
-		"/home/frederic/dev/trading/siis/connector/binance/exceptions.py",
-		"/home/frederic/dev/trading/siis/deps/requirements.txt",
-		"/home/frederic/dev/trading/siis/watcher/connector/bitmex/watcher.py",
-		"/home/frederic/dev/trading/siis/connector/binance/client.py",
-		"/home/frederic/dev/trading/siis/connector/binance/enums.py",
-		"/home/frederic/dev/trading/siis/strategy/bourricot/bourricotstatereport.py",
-		"/home/frederic/dev/trading/siis/watcher/watcher.py",
-		"/home/frederic/dev/trading/siis/watcher/connector/ig/fetcher.py",
-		"/home/frederic/dev/trading/siis/watcher/fetcher.py",
-		"/home/frederic/dev/trading/siis/tools/optimizer.py",
-		"/home/frederic/dev/trading/siis/database/optimizer.py",
-		"/home/frederic/dev/trading/siis/app/help.py",
-		"/home/frederic/dev/trading/siis/connector/ig/connector.py",
-		"/home/frederic/dev/trading/siis/connector/ig/rest.py",
-		"/home/frederic/dev/trading/siis/connector/ig/utils.py",
-		"/home/frederic/.siis/config/profiles/binance/testing/baseusdt-v01.json",
-		"/tmp/fz3temp-2/baseusdt-v01 2.json",
-		"/tmp/fz3temp-2/baseusdt-atr-1h-v01.json"
+		"/home/frederic/dev/trading/siis/config/alerts.json"
 	],
 	"find":
 	{
@@ -1270,6 +1237,92 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"size",
+			"Candle(",
+			"from_to_volumes",
+			"self._candles",
+			"super(",
+			"last_timestamp",
+			"gen_candles_from_ticks",
+			"on_received_initial_candles",
+			"day",
+			"_stddev_len",
+			"copy",
+			"Terminal",
+			"'error",
+			"'warning'",
+			"['profit-loss-pct']",
+			"trade[",
+			"Min notional not reached for",
+			"trade_clazz",
+			"check_pullback_signal",
+			"trade_clazz",
+			"STDDEV",
+			"TRADE_IND_MARGIN",
+			"type is not compatible for",
+			"fetch_mar",
+			"SPOT",
+			"MARKET",
+			"type is not compatible for",
+			"Missing trader config",
+			"breakeven",
+			"on_breakeven_trade",
+			"on_update_ticker",
+			"settin",
+			"option",
+			"options",
+			"trade['avg-entry-price'] || trade['order-price']",
+			"on_apply_modify_active_trade_stop_loss",
+			"modify_trade_stop_loss",
+			"on_modify_active_trade_stop_loss",
+			"trade-reverse",
+			"on_reverse_trade",
+			"on_close_trade",
+			"close",
+			"entry_methods",
+			"Best-1",
+			"Best 1",
+			"Best1",
+			"Best",
+			"Best 1",
+			"ta_STOCH",
+			"self._ks, self._ds = ta_STOCH(rsis, rsis, rsis, fastk_period=self._length, slowk_period=self._len_K, slowk_matype=0, slowd_period=self._len_D, slowd",
+			"ta_RSI",
+			"TR",
+			"ting",
+			"tiing",
+			"'TR'",
+			"TR",
+			"wss://fstream.binance.com",
+			"best-1",
+			"best-",
+			"best-1",
+			"best-",
+			"market",
+			"order",
+			"best-1",
+			"parse_tick",
+			"fetch_trades",
+			"direction = 0",
+			"direction = ",
+			"parse_tick",
+			"fetch_trades",
+			"store_market_trade",
+			"buyer",
+			"get_last_tick",
+			".last(",
+			"TICK_SIZE",
+			"self._tick_type",
+			"self._struct",
+			"_tick_type",
+			"store_market_trade",
+			"_trade",
+			"aggT",
+			"futures_leverage_bracket",
+			"leverageBracket",
+			"bookTicker",
+			"closePosition",
+			"Balance",
 			"ta_SMA(",
 			"or max reac",
 			"last",
@@ -1311,93 +1364,7 @@
 			"change",
 			"setup_",
 			"format_quote_price",
-			"fee",
-			"fees",
-			"take-profit-price",
-			"value-per-pip",
-			"format_quote_price",
-			"format_price",
-			"slider",
-			"format_price",
-			"function format_",
-			"def format_",
-			"format_",
-			"modified_take_profit_relative",
-			"<option>",
-			"modified_take_profit_type",
-			"slider",
-			"amount",
-			"amount*",
-			"amount",
-			"input",
-			"float",
-			"number",
-			"Unsupported action",
-			"window.actives_trades",
-			"$('#modify_trade_stop_loss').attr('trade-key', key);",
-			"modify_trade_stop_loss_price",
-			"'show'",
-			"stop_loss",
-			"position:",
-			"float:",
-			"float: right;",
-			"performance",
-			"backtesting",
-			"\"backtesting",
-			"'backtesting'",
-			"backtesting",
-			"self._backtest",
-			"self._backtesting",
-			"' '",
-			"modified_take_profit_price",
-			"on_modify_active_trade_stop_loss",
-			"avg",
-			"average",
-			"avg-",
-			"quant",
-			"audio_notify(",
-			"alert(",
-			"traders",
-			"setup",
-			"rsi",
-			"rsi_low",
-			"0.3",
-			"30",
-			"RSI",
-			"def compute(self, timestamp, high, low",
-			"._last_closed",
-			".last_closed",
-			".complete",
-			"._last_closed",
-			".last_closed =",
-			".last_closed",
-			"last_close",
-			"is_last_close",
-			"trend",
-			"max-spread",
-			"check",
-			"long_bounce_signal_atr_stoch",
-			"dynamic_take_profit_fixed_bollinger_long",
-			"trade.entry",
-			"excess_stochrsi",
-			"backtesting",
-			"window.strategy",
-			"audio_entry",
-			"remove_active_trade",
-			"StockRSI_",
-			"stochrsi",
-			"rsi",
-			"stochrsi",
-			"long_bounce_signal_atr_stoch",
-			"stochrsi",
-			".rsi",
-			"format_",
-			"price",
-			"rescue-stop-loss",
-			"-timeframe",
-			"self.price_epsilon_timeframe",
-			"-timeframe",
-			"price-epsilon-timeframe"
+			"fee"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1543,24 +1510,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "strategy/firebird/strategytrader.py",
+					"file": "instrument/candlegenerator.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 42865,
+						"buffer_size": 7449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								33157,
-								33157
+								5960,
+								5960
 							]
 						],
 						"settings":
@@ -1570,7 +1537,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10219.0,
+						"translation.y": 1974.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1578,19 +1545,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "strategy/firebird/parameters.py",
+					"file": "strategy/tickbarbasedstrategytrader.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4675,
+						"buffer_size": 9887,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2696,
-								2696
+								2542,
+								2542
 							]
 						],
 						"settings":
@@ -1600,117 +1567,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 504.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "strategy/firebird/suba.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5460,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2703,
-								2703
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1428.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "strategy/firebird/bounce.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20588,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16217,
-								16217
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4702.0,
+						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "monitor/web/js/trading.js",
+					"buffer": 2,
+					"file": "instrument/tickbargenerator.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 33817,
+						"buffer_size": 5898,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								234,
-								234
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "monitor/http/httprestserver.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16911,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16451,
-								16451
+								4296,
+								4296
 							]
 						],
 						"settings":
@@ -1720,68 +1597,70 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6779.0,
+						"translation.y": 1901.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "monitor/web/js/charting.js",
+					"buffer": 3,
+					"file": "instrument/tickbar.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3010,
+						"buffer_size": 4835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								249,
-								249
+								1261,
+								1261
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "monitor/web/js/webtrader.js",
+					"buffer": 4,
+					"file": "strategy/strategy.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 40112,
+						"buffer_size": 101074,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2280,
-								2280
+								31046,
+								31046
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 168.0,
+						"translation.y": 10540.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1852,6 +1731,106 @@
 		"selected_items":
 		[
 			[
+				"inst",
+				"instrument/instrument.py"
+			],
+			[
+				"ticks",
+				"database/tickstorage.py"
+			],
+			[
+				"cand",
+				"instrument/candlegenerator.py"
+			],
+			[
+				"timef",
+				"strategy/timeframebasedstrategytrader.py"
+			],
+			[
+				"vwa",
+				"strategy/indicator/vwap/vwap.py"
+			],
+			[
+				"bourstr",
+				"strategy/bourricot/bourricotstrategytrader.py"
+			],
+			[
+				"firebirdtr",
+				"strategy/firebird/strategytrader.py"
+			],
+			[
+				"bounce",
+				"strategy/firebird/bounce.py"
+			],
+			[
+				"bour",
+				"strategy/bourricot/bourricotstrategytrader.py"
+			],
+			[
+				"rsi",
+				"strategy/indicator/rsi/rsi.py"
+			],
+			[
+				"trader bin",
+				"trader/connector/binance/trader.py"
+			],
+			[
+				"para bou",
+				"strategy/bourricot/bourricotparameters.py"
+			],
+			[
+				"tradin js",
+				"monitor/web/js/trading.js"
+			],
+			[
+				"webtr",
+				"monitor/web/js/webtrader.js"
+			],
+			[
+				"tradinjs",
+				"monitor/web/js/trading.js"
+			],
+			[
+				"stra",
+				"strategy/strategy.py"
+			],
+			[
+				"webso",
+				"connector/binance/websockets.py"
+			],
+			[
+				"stdd",
+				"strategy/indicator/stddevbands/stddevbands.py"
+			],
+			[
+				"binance sock",
+				"connector/binance/websockets.py"
+			],
+			[
+				"watch kr",
+				"watcher/connector/kraken/watcher.py"
+			],
+			[
+				"fetch kr",
+				"watcher/connector/kraken/fetcher.py"
+			],
+			[
+				"wathc krt",
+				"watcher/connector/kraken/watcher.py"
+			],
+			[
+				"watch bin",
+				"watcher/connector/binance/watcher.py"
+			],
+			[
+				"trader binaf",
+				"trader/connector/binancefutures/trader.py"
+			],
+			[
+				"watcher binaf",
+				"watcher/connector/binancefutures/watcher.py"
+			],
+			[
 				"std",
 				"strategy/indicator/stddevbands/stddevbands.py"
 			],
@@ -1866,10 +1845,6 @@
 			[
 				"sma",
 				"strategy/indicator/sma/sma.py"
-			],
-			[
-				"rsi",
-				"strategy/indicator/rsi/rsi.py"
 			],
 			[
 				"suba f",
@@ -2012,10 +1987,6 @@
 				"view/signalview.py"
 			],
 			[
-				"bounce",
-				"strategy/firebird/bounce.py"
-			],
-			[
 				"stoc",
 				"strategy/indicator/stochastic/stochastic.py"
 			],
@@ -2036,20 +2007,12 @@
 				"monitor/http/httprestserver.py"
 			],
 			[
-				"webtr",
-				"monitor/web/js/webtrader.js"
-			],
-			[
 				"no",
 				"monitor/web/js/notification.js"
 			],
 			[
 				"servi",
 				"strategy/service.py"
-			],
-			[
-				"tradinjs",
-				"monitor/web/js/trading.js"
 			],
 			[
 				"wetr",
@@ -2066,10 +2029,6 @@
 			[
 				"timefusb",
 				"strategy/timeframebasedsub.py"
-			],
-			[
-				"timef",
-				"strategy/timeframebasedstrategytrader.py"
 			],
 			[
 				"viewsta",
@@ -2200,10 +2159,6 @@
 				"monitor/web/js/webtrader.js"
 			],
 			[
-				"webso",
-				"monitor/web/js/websocket.js"
-			],
-			[
 				"strea",
 				"monitor/streamable.py"
 			],
@@ -2286,82 +2241,6 @@
 			[
 				"watcher binf",
 				"watcher/connector/binancefutures/watcher.py"
-			],
-			[
-				"state",
-				"view/traderstateview.py"
-			],
-			[
-				"fetcher",
-				"watcher/fetcher.py"
-			],
-			[
-				"fetcher ig",
-				"watcher/connector/ig/fetcher.py"
-			],
-			[
-				"opt",
-				"tools/optimizer.py"
-			],
-			[
-				"optim",
-				"database/optimizer.py"
-			],
-			[
-				"help",
-				"app/help.py"
-			],
-			[
-				"wa",
-				"watcher/watcher.py"
-			],
-			[
-				"rest",
-				"connector/ig/rest.py"
-			],
-			[
-				"wathc ig",
-				"watcher/connector/ig/watcher.py"
-			],
-			[
-				"requi",
-				"deps/requirements.txt"
-			],
-			[
-				"trad.js",
-				"monitor/web/js/trading.js"
-			],
-			[
-				"boupar",
-				"strategy/bourricot/bourricotparameters.py"
-			],
-			[
-				"boust",
-				"strategy/bourricot/bourricotstrategytrader.py"
-			],
-			[
-				"tra serv",
-				"trader/service.py"
-			],
-			[
-				"command",
-				"app/tradingcommands.py"
-			],
-			[
-				"tradingc",
-				"app/tradingcommands.py"
-			],
-			[
-				"tradinc",
-				"app/tradingcommands.py"
-			],
-			[
-				"serv str",
-				"strategy/service.py"
-			],
-			[
-				"serv trad",
-				"trader/service.py"
 			]
 		],
 		"width": 0.0
